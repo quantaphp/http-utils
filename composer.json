@@ -1,0 +1,46 @@
+{
+    "name": "quanta/http-utils",
+    "type": "library",
+    "description": "Quanta Psr-15 utilities",
+    "keywords": [
+        "psr-15",
+        "middleware",
+        "request-handler",
+        "stack",
+        "queue"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/quantaphp/http-utils",
+    "support": {
+        "issues": "https://github.com/quantaphp/http-utils/issues",
+        "source": "https://github.com/quantaphp/http-utils"
+    },
+    "authors": [
+        {
+            "name": "pmall",
+            "email": "pierre.mallinjoud@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.4",
+        "psr/http-message": "^1.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "eloquent/phony-kahlan": "^4.0",
+        "kahlan/kahlan": "^5.0",
+        "phpstan/phpstan": "^0.12.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quanta\\Http\\": "src"
+        },
+        "files": [
+            "src/reducers.php"
+        ]
+    }
+}
